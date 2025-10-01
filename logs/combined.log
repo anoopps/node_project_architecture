@@ -1,0 +1,6 @@
+undefined [[object Object]] : undefined
+undefined [[object Object]] : undefined
+undefined [[object Object]] : undefined
+2025-09-26 17:40:18 [[31merror[39m] User already exists - Error: User already exists
+    at createUser (/home/anoop-ps/citus/node_mysql_learn/controllers/userController.js:68:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
