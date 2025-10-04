@@ -1,7 +1,7 @@
 const express = require("express");
 const helmet = require('helmet');
 const app = express();
-const errorHandler = require("./errorHandler");
+const errorHandler = require("./middleware/errorHandler");
 
 const authenticateToken = require("./middleware/authenticateToken");
 
@@ -18,6 +18,12 @@ app.use(errorHandler);
 const usersRouter = require("./routes/users");
 app.use('/users', usersRouter);
 
+const postRouter = require("./routes/post") ;
+app.use("/posts",postRouter);
+
+const commentRouter = require("./routes/comments");
+app.use("/comments", commentRouter);
+
 app.use("/protected", authenticateToken, (req, res) => {
   console.log("test protected");
   res.json({ message: 'This is protected', user: req.user });
@@ -31,3 +37,5 @@ app.use((err, req, res, next) => {
 
 const PORT = process.env.PORT;
 app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
+
+module.exports = app;

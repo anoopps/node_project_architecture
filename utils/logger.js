@@ -3,9 +3,9 @@ const { createLogger, format, transports } = require('winston');
 const { combine, timestamp, printf, colorize, errors, json } = format;
 
 // Custom log format
-const logFormat = printf(({ level, message, timestamp, stack, ...meta }) => {
+const logFormat = printf(({ timestamp, level, message, stack, ...meta }) => {
   // If we have a stack, log it (errors)
-  if (stack) {
+  if (stack) {    
     return `${timestamp} [${level}] ${message} - ${stack}`;
   }
   // Otherwise stringify meta if exists

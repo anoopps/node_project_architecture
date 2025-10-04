@@ -1,3 +1,52 @@
  2025-09-26 17:40:18 [[31merror[39m] User already exists - Error: User already exists
     at createUser (/home/anoop-ps/citus/node_mysql_learn/controllers/userController.js:68:13)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-09-29 10:09:47 [[31merror[39m] User already exists - Error: User already exists
+    at createUser (/home/anoop-ps/citus/node_mysql_learn/controllers/userController.js:68:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-01 12:04:24 [[31merror[39m] Title or content mising error - Error: Title or content mising error
+    at createPost (/home/anoop-ps/citus/node_mysql_learn/controllers/postController.js:10:19)
+    at Layer.handleRequest (/home/anoop-ps/citus/node_mysql_learn/node_modules/router/lib/layer.js:152:17)
+    at next (/home/anoop-ps/citus/node_mysql_learn/node_modules/router/lib/route.js:157:13)
+    at authenticateToken (/home/anoop-ps/citus/node_mysql_learn/middleware/authenticateToken.js:23:5)
+    at Layer.handleRequest (/home/anoop-ps/citus/node_mysql_learn/node_modules/router/lib/layer.js:152:17)
+    at next (/home/anoop-ps/citus/node_mysql_learn/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/anoop-ps/citus/node_mysql_learn/node_modules/router/lib/route.js:117:3)
+    at handle (/home/anoop-ps/citus/node_mysql_learn/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/anoop-ps/citus/node_mysql_learn/node_modules/router/lib/layer.js:152:17)
+    at /home/anoop-ps/citus/node_mysql_learn/node_modules/router/index.js:295:15
+2025-10-01 13:03:04 [[31merror[39m] Something went wrong 
+2025-10-01 13:11:28 [[31merror[39m] Something went wrong 
+2025-10-01 14:31:45 [[31merror[39m] DB connection failed - Error: DB connection failed
+    at getPostsByUser (/home/anoop-ps/citus/node_mysql_learn/controllers/postController.js:32:21)
+    at Layer.handleRequest (/home/anoop-ps/citus/node_mysql_learn/node_modules/router/lib/layer.js:152:17)
+    at next (/home/anoop-ps/citus/node_mysql_learn/node_modules/router/lib/route.js:157:13)
+    at authenticateToken (/home/anoop-ps/citus/node_mysql_learn/middleware/authenticateToken.js:23:5)
+    at Layer.handleRequest (/home/anoop-ps/citus/node_mysql_learn/node_modules/router/lib/layer.js:152:17)
+    at next (/home/anoop-ps/citus/node_mysql_learn/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/anoop-ps/citus/node_mysql_learn/node_modules/router/lib/route.js:117:3)
+    at handle (/home/anoop-ps/citus/node_mysql_learn/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/anoop-ps/citus/node_mysql_learn/node_modules/router/lib/layer.js:152:17)
+    at /home/anoop-ps/citus/node_mysql_learn/node_modules/router/index.js:295:15
+2025-10-01 15:30:13 [[31merror[39m] query is not defined - ReferenceError: query is not defined
+    at createComment (/home/anoop-ps/citus/node_mysql_learn/controllers/commentController.js:16:46)
+    at Layer.handleRequest (/home/anoop-ps/citus/node_mysql_learn/node_modules/router/lib/layer.js:152:17)
+    at next (/home/anoop-ps/citus/node_mysql_learn/node_modules/router/lib/route.js:157:13)
+    at authenticateToken (/home/anoop-ps/citus/node_mysql_learn/middleware/authenticateToken.js:23:5)
+    at Layer.handleRequest (/home/anoop-ps/citus/node_mysql_learn/node_modules/router/lib/layer.js:152:17)
+    at next (/home/anoop-ps/citus/node_mysql_learn/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/anoop-ps/citus/node_mysql_learn/node_modules/router/lib/route.js:117:3)
+    at handle (/home/anoop-ps/citus/node_mysql_learn/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/anoop-ps/citus/node_mysql_learn/node_modules/router/lib/layer.js:152:17)
+    at /home/anoop-ps/citus/node_mysql_learn/node_modules/router/index.js:295:15
+2025-10-01 16:08:39 [[31merror[39m] Cannot read properties of undefined (reading 'id') - TypeError: Cannot read properties of undefined (reading 'id')
+    at getCommentsByPost (/home/anoop-ps/citus/node_mysql_learn/controllers/commentController.js:49:33)
+    at Layer.handleRequest (/home/anoop-ps/citus/node_mysql_learn/node_modules/router/lib/layer.js:152:17)
+    at next (/home/anoop-ps/citus/node_mysql_learn/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/anoop-ps/citus/node_mysql_learn/node_modules/router/lib/route.js:117:3)
+    at handle (/home/anoop-ps/citus/node_mysql_learn/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/anoop-ps/citus/node_mysql_learn/node_modules/router/lib/layer.js:152:17)
+    at /home/anoop-ps/citus/node_mysql_learn/node_modules/router/index.js:295:15
+    at param (/home/anoop-ps/citus/node_mysql_learn/node_modules/router/index.js:600:14)
+    at param (/home/anoop-ps/citus/node_mysql_learn/node_modules/router/index.js:610:14)
+    at processParams (/home/anoop-ps/citus/node_mysql_learn/node_modules/router/index.js:664:3)
